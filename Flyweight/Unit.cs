@@ -69,6 +69,10 @@ namespace Flyweight
     public class UnitFactory
     {
         List<Unit> list = new List<Unit>();
+        public void AddUnit(Unit obj)
+        {
+            list.Add(obj);
+        }
         public List<Unit> GetUnits(Unit obj)
         {
             List<Unit> res = new List<Unit>();
